@@ -16,6 +16,7 @@ h1, h2, h3, p, a {
 
 .container {
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .intro-header h1 {
@@ -53,6 +54,9 @@ h1, h2, h3, p, a {
   text-decoration: none;
   font-weight: 500;
 }
+.Question-1 {
+ padding-bottom: 20px;
+}
 
 .Question-btn {
   background: white;
@@ -63,18 +67,14 @@ h1, h2, h3, p, a {
 }
 
 .Question-btn:active {
-  background: rgb(214, 91, 166);
-  background: linear-gradient(
-    198deg,
-    rgba(214, 91, 166, 1) 19%,
-    rgba(195, 111, 220, 1) 91%
-  );
+background: rgb(214,91,166);
+background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 91%);
  
 }
 
 .Question-btn a {
   color: #383D6E;
-    font-size: 1.2rem;
+    font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
 }
@@ -90,13 +90,12 @@ h1, h2, h3, p, a {
     rgba(214, 91, 166, 1) 19%,
     rgba(195, 111, 220, 1) 91%
   );
-   padding: 15px 40px;
+   padding: 10px 30px;
   margin: 20px;
   border-radius: 24px;
   text-align: center;
 
 }
-
 
 .back-btn a {
   color: white;

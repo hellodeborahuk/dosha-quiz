@@ -6,16 +6,15 @@ function Questions() {
         event.preventDefault();
         console.log('send me home');
     }
-    
+
   return (
     <div className="Questions">
-      <header className="App-header"></header>
       <div className="container">
         <section className="question-number">
           <p>Question 1 of 11</p>
         </section>
         <section className="Question-btns">
-          <h3 >How would you describe your body type and how you look?</h3>
+          <h3 className="Question-1">How would you describe your body type and how you look?</h3>
           <div className="Question-btn">
             <a href="#">
               I am thin, lanky, and slender with prominent joints and thin

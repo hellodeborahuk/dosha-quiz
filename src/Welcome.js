@@ -1,36 +1,36 @@
 import React from "react";
 
 function Welcome(props) {
+  function handleClick(event) {
+    event.preventDefault();
+    props.setAppState("questions");
+  }
 
-     function handleClick(event) {
-       event.preventDefault();
-       props.setAppState("questions");
-     }
-
-return (
-
-<div className="container">
-  <section className="intro-header">
-    <h1>DOSHA QUIZ</h1>
-  </section>
-  <section className="intro-copy">
-    <p>
-      According to Ayurveda, doshas are the energy patterns that flow around our
-      bodies, governing our thinking and behaviour. There are three primary
-      doshas - vata, pitta and kapha – and we're all born with all three of
-      them. But it’s the dominance of one or two of these doshas that defines
-      who we are. To enjoy a balanced mind, body and spirit, so the thinking
-      goes, our unique dosha constitution needs to be in a state of equilibrium,
-      when it isn’t, we fall ill.
-    </p>
-  </section>
-  <section className="quiz-btn">
-    <a href="#" onClick={handleClick}>
-      Which dosha are you?
-    </a>
-  </section>
-</div>
-);
+  return (
+    <div className="container">
+      <section className="intro-header">
+        <h1>DOSHA QUIZ</h1>
+      </section>
+      <section className="intro-copy">
+        <p>
+          Doshas are a central element of Ayurveda and the basis of what makes
+          it such a personalized approach to health. There are three Doshas —
+          Vata, Pitta, and Kapha. By understanding your Dosha and creating a
+          lifestyle accordingly, you’ll enjoy a healthier, more balanced life.
+        </p>
+        <p>
+          This quiz is the first step toward creating that lifestyle. When
+          answering the questions, think about your whole life and not just your
+          most recent condition. Choose the answer that best fits you.
+        </p>
+      </section>
+      <section className="quiz-btn">
+        <a href="#" onClick={handleClick}>
+          Which dosha are you?
+        </a>
+      </section>
+    </div>
+  );
 }
 
 export default Welcome;
