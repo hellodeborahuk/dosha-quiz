@@ -6,9 +6,9 @@ I wanted a quiz where when you select an option, it would automatically move you
 
 # To figure out
 
-- back button goes to previous page
+- next button goes to next page
 - Question number needs to increase on page increase
-- onClick of answer it moves on to next page
+- onClick of answer highlights it, not just on active
 - On question 11, onClick goes to results page
 - results page works out percentage for dosha result
 - results 'find out more' button goes to 1 of 6 pages with information about that dosha, duel dosha, tri dosha

@@ -69,8 +69,8 @@ h1, h2, h3, p, a {
 .Question-btn:active {
 background: rgb(214,91,166);
 background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 91%);
- 
 }
+
 
 .Question-btn a {
   color: #383D6E;
