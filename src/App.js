@@ -1,10 +1,15 @@
-import './App.css';
+import "./App.css";
 
 function App() {
+  function handleClick(event) {
+    event.preventDefault();
+    console.log('clicked the button');
+  }
+
   return (
     <div className="App">
       <header className="App-header"></header>
-     
+      <div className="container">
         <section className="intro-header">
           <h1>DOSHA QUIZ</h1>
         </section>
@@ -20,9 +25,10 @@ function App() {
           </p>
         </section>
         <section className="quiz-btn">
-          <a href="#">Which dosha are you?</a>
+          <a href="#" onClick={handleClick}>Which dosha are you?</a>
         </section>
       </div>
+    </div>
   );
 }
 
