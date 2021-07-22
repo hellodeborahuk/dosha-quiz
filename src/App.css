@@ -42,18 +42,18 @@ h1, h2, h3, p, a {
     rgba(214, 91, 166, 1) 19%,
     rgba(195, 111, 220, 1) 91%
   );
+  border: 0;
   padding: 15px 40px;
   margin: 20px;
   border-radius: 24px;
   text-align: center;
-}
-
-.quiz-btn a {
-  color: white;
+   color: white;
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 500;
+  cursor: pointer;
 }
+
 .Question-1 {
  padding-bottom: 20px;
 }
@@ -64,26 +64,22 @@ h1, h2, h3, p, a {
   margin: 20px;
   border-radius: 24px;
   text-align: center;
-}
-
-.Question-btn:active {
-background: rgb(214,91,166);
-background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 91%);
-}
-
-
-.Question-btn a {
-  color: #383D6E;
+    color: #383D6E;
     font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
+  width: 100%;
+  border: 0;
 }
 
-.Question-btn:active a {
+.Question-btn:active, .Question-btn-selected {
+background: rgb(214,91,166);
+background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 91%);
   color: white;
 }
 
-.back-btn {
+
+.next-btn {
   background: rgb(214, 91, 166);
   background: linear-gradient(
     198deg,
@@ -94,15 +90,14 @@ background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 
   margin: 20px;
   border-radius: 24px;
   text-align: center;
-
-}
-
-.back-btn a {
   color: white;
   font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
+  border: 0;
 }
+
+
 
 @media (min-width: 992px) {
   .container {

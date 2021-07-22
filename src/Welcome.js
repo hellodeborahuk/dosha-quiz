@@ -24,10 +24,10 @@ function Welcome(props) {
           most recent condition. Choose the answer that best fits you.
         </p>
       </section>
-      <section className="quiz-btn">
-        <a href="/" onClick={handleClick}>
+      <section>
+        <button className="quiz-btn" onClick={handleClick}>
           Which dosha are you?
-        </a>
+        </button>
       </section>
     </div>
   );

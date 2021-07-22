@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function Questions() {
-  function nextClick(event) {
-    event.preventDefault();
-    console.log("next question");
-  }
+  let [id, setId] = useState(0);
+  let [selected, setSelected] = useState(null);
+
+  function nextClick() {
+      if (selected === null) {
+          return
+      }
+      if (id + 1 > quizQuestions.length) {
+          return
+      }
+
+
+      setSelected(null);
+    setId(id + 1);
+}
+
 
   const quizQuestions = [
     {
@@ -109,35 +121,36 @@ function Questions() {
     },
   ];
 
+  let currentQuestion = quizQuestions.find((item) => item.id === id);
+  console.log(currentQuestion);
   return (
     <div className="Questions">
       <div className="container">
         <section className="question-number">
-          <p>Question 1 of 11</p>
+          <p>Question {id + 1} of {quizQuestions.length}</p>
         </section>
         <section className="Question-btns">
-          <h3 className="Question-1">
-            How would you describe your body type and how you look?
-          </h3>
-          <div className="Question-btn">
-            <a href="/">
-              I am thin, lanky, and slender with prominent joints and thin
-              muscles.
-            </a>
-          </div>
-          <div className="Question-btn">
-            <a href="/">
-              I have a medium, symmetrical build with good muscle development.
-            </a>
-          </div>
-          <div className="Question-btn">
-            <a href="/">I have a broad and full build.</a>
+          <h3 className="Question-1">{currentQuestion.question}</h3>
+          <div>
+            {currentQuestion.options.map((option, key) => (
+              <button
+                key={key}
+                className={
+                  selected === key
+                    ? "Question-btn-selected Question-btn"
+                    : "Question-btn"
+                }
+                onClick={() => setSelected(key)}
+              >
+                {option}
+              </button>
+            ))}
           </div>
         </section>
-        <section className="back-btn">
-          <a href="/" onClick={nextClick}>
+        <section>
+          <button className="next-btn" onClick={nextClick}>
             Next Question
-          </a>
+          </button>
         </section>
       </div>
     </div>
