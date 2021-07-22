@@ -25,7 +25,7 @@ function Welcome(props) {
         </p>
       </section>
       <section className="quiz-btn">
-        <a href="#" onClick={handleClick}>
+        <a href="/" onClick={handleClick}>
           Which dosha are you?
         </a>
       </section>

@@ -16,22 +16,22 @@ function Questions() {
         <section className="Question-btns">
           <h3 className="Question-1">How would you describe your body type and how you look?</h3>
           <div className="Question-btn">
-            <a href="#">
+            <a href="/">
               I am thin, lanky, and slender with prominent joints and thin
               muscles.
             </a>
           </div>
           <div className="Question-btn">
-            <a href="#">
+            <a href="/">
               I have a medium, symmetrical build with good muscle development.
             </a>
           </div>
           <div className="Question-btn">
-            <a href="#">I have a broad and full build.</a>
+            <a href="/">I have a broad and full build.</a>
           </div>
         </section>
         <section className="back-btn">
-            <a href="#" onClick={backClick}>Back</a>
+            <a href="/" onClick={backClick}>Back</a>
         </section>
       </div>
     </div>
