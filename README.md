@@ -6,11 +6,8 @@ I wanted a quiz where when you select an option, it would automatically move you
 
 # Stumbling blocks
 
-To get the initial design and questions up was relatively straightforward. Where I got stuck was with trying to count how many of each button had been clicked (a, b or c). Whichever had the most clicks was the answer. I reached out to the community for some guidance and was given some direction which helped me figure out how to do this. 
+To get the initial design and questions up was relatively straightforward. Where I got stuck was with trying to count how many of each button had been clicked (a, b or c). Whichever had the most clicks was the answer. I reached out to the community for some guidance and was given some direction which helped me figure out how to do this. I filtered the results array and used the length of the filtered array to count the a, b and c's. To work out which was clicked the most I used if statements.
 
-# To figure out
+# Further development
 
-- Work out how the results get saved
-- On question 11, onClick goes to results page
-- results page works out percentage for dosha result
-- results 'find out more' button goes to 1 of 6 pages with information about that dosha, duel dosha, tri dosha
+I want to create a pie chart with results in to show what percentage of each dosha someone is.

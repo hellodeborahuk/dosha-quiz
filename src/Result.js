@@ -38,13 +38,6 @@ else {
   dosha = "You screwed up";
 }
 
-      // if a > b && a > c 
-// else if b > a && b > c
-// else if c > a && c > b
-// else if a == b
-// else if b == c
-// else if a == c
-// else alert (you screwed up)
 
  console.log(totals);
   return (
