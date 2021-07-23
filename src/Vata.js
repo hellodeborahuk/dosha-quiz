@@ -3,8 +3,8 @@ import "./App.css";
 
 function Vata() {
   return (
-    <div className="Vata">
-      <h1>Vata</h1>
+    <div className="container">
+      <h1 className="dosha-title">Vata</h1>
       <section className="dosha-info">
         <p>
           Vata’s elemental makeup consists of air and ether. The common

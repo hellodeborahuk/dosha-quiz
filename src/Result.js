@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.css";
 import Vata from "./Vata";
+import Pitta from "./Pitta";
+import Kapha from "./Kapha";
+import Pittakapha from "./Pittakapha";
+import Vatakapha from "./Vatakapha";
+import Vatapitta from "./Vatapitta";
 
 function Result({results}) {
 
@@ -16,21 +21,20 @@ let dosha;
 
 if (aCount > bCount && aCount > cCount) {
   dosha = <Vata />
-  // Vata
 } else if (bCount > aCount && bCount > cCount) {
-  // Pitta
-}
+dosha = <Pitta />}
 else if (cCount > aCount && cCount > bCount) {
-  // Kapha
+  dosha = <Kapha />
 }
 else if (aCount == bCount) {
-// Vata Pitta
+dosha = <Vatapitta />
 } else if (bCount == cCount) {
-// Pitta Kapha
+dosha = <Pittakapha />
 }
 else if (aCount == cCount) {
-// Vata Kapha
-} else {
+dosha = <Vatakapha />
+} 
+else {
   dosha = "You screwed up";
 }
 
@@ -46,8 +50,8 @@ else if (aCount == cCount) {
   return (
     <div className="Result">
       <h1>Your dosha is likely to be...</h1>
-      {dosha}
-    </div>
+{dosha}
+ </div>
   );
 }
 

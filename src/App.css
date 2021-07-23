@@ -1,6 +1,13 @@
-h1, h2, h3, p, a {
+h1,
+h2,
+h3,
+p,
+a {
   color: white;
   text-align: center;
+}
+button {
+  cursor: pointer;
 }
 
 .App-header {
@@ -32,8 +39,7 @@ h1, h2, h3, p, a {
 
 .intro-copy p {
   font-size: 1rem;
-    text-align: left;
-
+  text-align: left;
 }
 .quiz-btn {
   background: rgb(214, 91, 166);
@@ -47,7 +53,7 @@ h1, h2, h3, p, a {
   margin: 20px;
   border-radius: 24px;
   text-align: center;
-   color: white;
+  color: white;
   font-size: 1.2rem;
   text-decoration: none;
   font-weight: 500;
@@ -55,7 +61,7 @@ h1, h2, h3, p, a {
 }
 
 .Question-1 {
- padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .Question-btn {
@@ -64,20 +70,24 @@ h1, h2, h3, p, a {
   margin: 20px;
   border-radius: 24px;
   text-align: center;
-    color: #383D6E;
-    font-size: 1rem;
+  color: #383d6e;
+  font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
   width: 100%;
   border: 0;
 }
 
-.Question-btn:active, .Question-btn-selected {
-background: rgb(214,91,166);
-background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 91%);
+.Question-btn:active,
+.Question-btn-selected {
+  background: rgb(214, 91, 166);
+  background: linear-gradient(
+    198deg,
+    rgba(214, 91, 166, 1) 19%,
+    rgba(108, 207, 246, 1) 91%
+  );
   color: white;
 }
-
 
 .next-btn {
   background: rgb(214, 91, 166);
@@ -86,7 +96,7 @@ background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 
     rgba(214, 91, 166, 1) 19%,
     rgba(195, 111, 220, 1) 91%
   );
-   padding: 10px 30px;
+  padding: 10px 30px;
   margin: 20px;
   border-radius: 24px;
   text-align: center;
@@ -97,7 +107,65 @@ background: linear-gradient(198deg, rgba(214,91,166,1) 19%, rgba(108,207,246,1) 
   border: 0;
 }
 
+.dosha-info p {
+  text-align: left;
+}
 
+.dosha-title {
+font-size: 3rem;
+margin-top: 0;
+margin-bottom: 20px;
+  background: -webkit-linear-gradient(
+    198deg,
+    rgba(214, 91, 166, 1) 19%,
+    rgba(108, 207, 246, 1) 91%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dosha-info h2 {
+  margin-top: 30px;
+}
+.dosha-info {
+   background: #4b5395;
+  margin: 20px;
+  padding: 20px 50px;
+  border-radius: 24px;
+  box-shadow: 0px 0px 37px -2px rgba(195,111,220,0.89);
+}
+
+.dosha-info ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  color: white;
+}
+
+.dosha-info li {
+  padding-bottom: 13px;
+}
+.dosha-btns {
+  text-align: center;
+}
+
+.dosha-btn {
+  background: rgb(214, 91, 166);
+  background: linear-gradient(
+    198deg,
+    rgba(214, 91, 166, 1) 19%,
+    rgba(195, 111, 220, 1) 91%
+  );
+  padding: 10px 30px;
+  margin: 20px;
+  border-radius: 24px;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  border: 0;
+}
 
 @media (min-width: 992px) {
   .container {
