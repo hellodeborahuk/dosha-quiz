@@ -35,7 +35,7 @@ else if (aCount == cCount) {
 dosha = <Vatakapha />
 } 
 else {
-  dosha = "You screwed up";
+  dosha = null;
 }
 
 
