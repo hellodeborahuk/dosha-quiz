@@ -17,6 +17,7 @@ function Result({results}) {
         { label: "b", value: bCount },
         { label: "c", value: cCount },
       ];
+
 let dosha;
 
 if (aCount > bCount && aCount > cCount) {
@@ -26,12 +27,12 @@ dosha = <Pitta />}
 else if (cCount > aCount && cCount > bCount) {
   dosha = <Kapha />
 }
-else if (aCount == bCount) {
+else if (aCount === bCount) {
 dosha = <Vatapitta />
-} else if (bCount == cCount) {
+} else if (bCount === cCount) {
 dosha = <Pittakapha />
 }
-else if (aCount == cCount) {
+else if (aCount === cCount) {
 dosha = <Vatakapha />
 } 
 else {
