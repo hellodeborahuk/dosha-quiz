@@ -4,11 +4,13 @@ First up I created a design for the dosha quiz in Figma: https://www.figma.com/f
 
 I wanted a quiz where when you select an option, it would automatically move you forward to the next question. 
 
+# Stumbling blocks
+
+To get the initial design and questions up was relatively straightforward. Where I got stuck was with trying to count how many of each button had been clicked (a, b or c). Whichever had the most clicks was the answer. I reached out to the community for some guidance and was given some direction which helped me figure out how to do this. 
+
 # To figure out
 
-- next button goes to next page
-- Question number needs to increase on page increase
-- onClick of answer highlights it, not just on active
+- Work out how the results get saved
 - On question 11, onClick goes to results page
 - results page works out percentage for dosha result
 - results 'find out more' button goes to 1 of 6 pages with information about that dosha, duel dosha, tri dosha
