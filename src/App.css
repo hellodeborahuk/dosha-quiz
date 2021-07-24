@@ -8,6 +8,7 @@ a {
 }
 button {
   cursor: pointer;
+  text-align: center;
 }
 
 .App-header {
@@ -24,6 +25,10 @@ button {
 .container {
   margin: 0 auto;
   padding-top: 20px;
+  width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .intro-header h1 {
@@ -74,7 +79,7 @@ button {
   font-size: 1rem;
   text-decoration: none;
   font-weight: 500;
-  width: 100%;
+  width: 90%;
   border: 0;
 }
 
@@ -173,5 +178,9 @@ margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .Question-btn {
+    width: 100%;
   }
 }
