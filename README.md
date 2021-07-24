@@ -8,7 +8,7 @@ I wanted a quiz where when you select an option and it would remember what you'v
 
 To get the initial design and questions up was relatively straightforward. Where I got stuck was with trying to count how many of each button had been clicked (a, b or c). Whichever had the most clicks was the answer. I reached out to the community for some guidance and was given some direction which helped me figure out how to do this. I filtered the results array and used the length of the filtered array to count the a, b and c's. To work out which was clicked the most I used if statements.
 
-![Dosha Quiz counting code](https://github.com/hellodeborahuk/doshaquiz/blob/main/media/dosha-quiz-code.png?raw=true)
+![Dosha Quiz counting code](https://laughing-lamarr-1f3b95.netlify.app/media/dosha-quiz-code.png)
 
 # Future improvements
 
