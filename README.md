@@ -1,6 +1,6 @@
 # Creating a Dosha Quiz
 
-First up I created a design for the dosha quiz in Figma: https://www.figma.com/file/ZunMd3aIgTKHU4vtnyq3j8/Dosha-Quiz?node-id=0%3A1 and found a colour scheme I liked the look of: https://coolors.co/d65ba6-c36fdc-383d6e-4b5395-6ccff6
+First up I created a design for the dosha quiz in [Figma](https://www.figma.com/file/ZunMd3aIgTKHU4vtnyq3j8/Dosha-Quiz?node-id=0%3A1) and found a [colour scheme](https://coolors.co/d65ba6-c36fdc-383d6e-4b5395-6ccff6) I liked the look of.
 
 I wanted a quiz where when you select an option and it would remember what you've counted and let you know at the end how many of each button you'd selected. From the initial design, I decided to use a next question button rather than a back button. I personally don't feel like you need to go backwards on such a quiz.
 
